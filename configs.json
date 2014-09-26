@@ -63,6 +63,18 @@
 				"Series"
 			],
 			"description": "An id for colors."
+      	},
+      	"grafly_dropdowns": {
+      		"allows_multiple": true,
+      		"required": false,
+      		"types": [
+      			"number",
+      			"string",
+      			"date"
+      		],
+      		"sample_columns": [
+      		],
+      		"description": "Dropdowns."	
       	}
 	}
 }
