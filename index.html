@@ -109,8 +109,10 @@
   };
 
   function runGlobe(){
+    var globeType = Block.vars.globe_color ? "world2.jpg": "world.jpg";
+
     var globe = DAT.Globe(document.getElementById('container'),
-    {colorFn: colorFn});
+    {colorFn: colorFn}, globeType);
 
     var data = [];
     

@@ -7,7 +7,15 @@
 	      "values": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"],
 	      "description": "Sets the colors used in the graph. Each color will be used for 1 series. If you specify less colors than series, colors will be repeated.",
 	      "type": "multiple_colors_arbitrary"
-	    }    
+	    },
+    	"globe_color": {
+          "readable": "Colored globe",
+          "category": "General",
+          "placeholder": true,
+          "values": true,
+          "description": "Sets whether to use a colorful globe, or black globe.",
+          "type": "boolean"
+        }    
 	},
 	"roles": {
 		"latitude": {

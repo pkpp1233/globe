@@ -13,7 +13,7 @@
 
 var DAT = DAT || {};
 
-DAT.Globe = function(container, opts) {
+DAT.Globe = function(container, opts, globeType) {
   opts = opts || {};
   
   var colorFn = opts.colorFn || function(x) {
@@ -104,7 +104,7 @@ DAT.Globe = function(container, opts) {
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-    uniforms['texture'].value = THREE.ImageUtils.loadTexture(imgDir+'world.jpg');
+    uniforms['texture'].value = THREE.ImageUtils.loadTexture(imgDir+globeType);
 
     material = new THREE.ShaderMaterial({
 
